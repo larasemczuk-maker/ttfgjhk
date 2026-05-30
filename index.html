@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultura e Uso da Água - Projeto Educativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌾 Agricultura e o Uso Sustentável da Água 💧</h1>
+        <p>Entenda como a água é essencial para a produção de alimentos e como podemos usá-la de forma inteligente</p>
+    </header>
+
+    <nav>
+        <button class="tab-btn active" data-tab="importancia">Importância</button>
+        <button class="tab-btn" data-tab="metodos">Métodos de Irrigação</button>
+        <button class="tab-btn" data-tab="desafios">Desafios</button>
+        <button class="tab-btn" data-tab="solucoes">Soluções Sustentáveis</button>
+        <button class="tab-btn" data-tab="calculadora">Calculadora de Água</button>
+    </nav>
+
+    <main>
+        <!-- Seção Importância -->
+        <section id="importancia" class="tab-content active">
+            <h2>💧 Por que a água é vital para a agricultura?</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>🌱 Fotossíntese</h3>
+                    <p>A água é essencial para o processo de fotossíntese, onde as plantas produzem seu próprio alimento.</p>
+                </div>
+                <div class="card">
+                    <h3>🧪 Transporte de Nutrientes</h3>
+                    <p>Dissolve minerais do solo e os transporta para todas as partes da planta.</p>
+                </div>
+                <div class="card">
+                    <h3>🌡️ Regulação Térmica</h3>
+                    <p>Ajuda a manter a temperatura ideal das plantas através da transpiração.</p>
+                </div>
+                <div class="card">
+                    <h3>📈 Crescimento Celular</h3>
+                    <p>Mantém as células túrgidas, permitindo que a planta se mantenha ereta e cresça.</p>
+                </div>
+            </div>
+            <div class="fact-box">
+                <strong>📊 Fato importante:</strong> A agricultura consome cerca de <span id="consumo-agricultura">70%</span> de toda a água doce utilizada no mundo!
+            </div>
+        </section>
+
+        <!-- Seção Métodos de Irrigação -->
+        <section id="metodos" class="tab-content">
+            <h2>🚿 Métodos de Irrigação na Agricultura</h2>
+            <div class="methods-grid">
+                <div class="method-card">
+                    <h3>💦 Irrigação por Aspersão</h3>
+                    <p>Simula a chuva, distribuindo água através de aspersores. Eficiente para diversas culturas.</p>
+                    <span class="eficiencia">Eficiência: 70-85%</span>
+                </div>
+                <div class="method-card">
+                    <h3>🌊 Irrigação por Superfície</h3>
+                    <p>Método tradicional onde a água flui pela gravidade. Baixo custo, mas menos eficiente.</p>
+                    <span class="eficiencia">Eficiência: 40-60%</span>
+                </div>
+                <div class="method-card">
+                    <h3>💧 Irrigação por Gotejamento</h3>
+                    <p>Água aplicada diretamente na raiz da planta. O método mais eficiente!</p>
+                    <span class="eficiencia">Eficiência: 90-95%</span>
+                </div>
+                <div class="method-card">
+                    <h3>🌀 Irrigação por Sulcos</h3>
+                    <p>Canais entre as fileiras de plantas. Comum em culturas como milho e algodão.</p>
+                    <span class="eficiencia">Eficiência: 50-70%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Desafios -->
+        <section id="desafios" class="tab-content">
+            <h2>⚠️ Desafios no Uso da Água na Agricultura</h2>
+            <ul class="challenges-list">
+                <li><strong>🌍 Escassez Hídrica:</strong> Muitas regiões sofrem com falta de água para irrigação.</li>
+                <li><strong>💸 Desperdício:</strong> Sistemas ineficientes perdem até 60% da água.</li>
+                <li><strong>🧪 Contaminação:</strong> Uso excessivo de fertilizantes e pesticidas contamina aquíferos.</li>
+                <li><strong>📉 Mudanças Climáticas:</strong> Secas prolongadas e chuvas irregulares afetam a produção.</li>
+                <li><strong>⚖️ Conflitos por Água:</strong> Disputa entre agricultura, indústria e consumo humano.</li>
+            </ul>
+            <div class="alert-box">
+                <strong>🚨 Alerta:</strong> Mais de 2 bilhões de pessoas vivem em países com estresse hídrico severo!
+            </div>
+        </section>
+
+        <!-- Seção Soluções Sustentáveis -->
+        <section id="solucoes" class="tab-content">
+            <h2>🌱 Soluções para um Uso Sustentável</h2>
+            <div class="solutions">
+                <div class="solution-item">
+                    <h3>💧 Captação de Água da Chuva</h3>
+                    <p>Armazenar água da chuva para períodos de seca reduz a dependência de fontes externas.</p>
+                </div>
+                <div class="solution-item">
+                    <h3>🌾 Agricultura de Precisão</h3>
+                    <p>Uso de sensores e dados para irrigar apenas quando e onde necessário.</p>
+                </div>
+                <div class="solution-item">
+                    <h3>🔄 Reuso de Água</h3>
+                    <p>Tratamento e reaproveitamento da água utilizada na agricultura.</p>
+                </div>
+                <div class="solution-item">
+                    <h3>🌿 Plantio Direto</h3>
+                    <p>Técnica que mantém palha na superfície, reduzindo evaporação e melhorando a infiltração.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Calculadora -->
+        <section id="calculadora" class="tab-content">
+            <h2>📱 Calculadora de Necessidade Hídrica</h2>
+            <p>Descubra quanta água uma cultura pode precisar diariamente:</p>
+            
+            <div class="calculator">
+                <div class="input-group">
+                    <label for="cultura">Tipo de Cultura:</label>
+                    <select id="cultura">
+                        <option value="tomate">Tomate (4-6 mm/dia)</option>
+                        <option value="milho">Milho (5-8 mm/dia)</option>
+                        <option value="arroz">Arroz (6-10 mm/dia)</option>
+                        <option value="trigo">Trigo (3-5 mm/dia)</option>
+                        <option value="cafe">Café (2-4 mm/dia)</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="area">Área (m²):</label>
+                    <input type="number" id="area" value="1000" step="100">
+                </div>
+
+                <div class="input-group">
+                    <label for="eficiencia">Eficiência do Sistema (%):</label>
+                    <input type="number" id="eficiencia" value="75" step="5" min="30" max="100">
+                </div>
+
+                <button id="calcular-btn">Calcular Necessidade</button>
+
+                <div id="resultado">
+                    <h3>Resultado:</h3>
+                    <p>Consumo diário: <span id="consumo-diario">0</span> litros</p>
+                    <p>Consumo mensal: <span id="consumo-mensal">0</span> litros</p>
+                    <p id="sugestao"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>🌍 Projeto Educativo - Conscientização sobre o Uso Racional da Água na Agricultura</p>
+        <p>Dados baseados em médias da FAO e Embrapa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
